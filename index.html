@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP12</title>
+    <link rel="stylesheet" href="top10.css">
+</head>
+<body>
+<section id="body">
+
+    <div class="header" id="header">
+        <div class="biblioteca" id="biblioteca"></div>
+
+        <!-- Barra de pesquisa -->
+    <input type="text" id="searchInput" class="search-box" placeholder="Pesquisar música...">
+    <button onclick="searchMusic()" class="search-button"><img src="/img/Lupa2.webp" alt=""></button>
+
+        <div class="perfil">
+            <img src="img/do-utilizador.png" alt="perfil" class="perfil">
+        </div>
+    </div>
+
+    <section>
+        <h2>TOP 12 Músicas</h2>
+        <p class="p1">Aqui estão guardadas as minhas 12 músicas favoritas do momento.</p>
+        <br><br><br>
+
+        <section class="section">
+            <div class="img_musica">
+                <div class="musica_item" data-audio="music/someday.mp3">
+                    <img src="img/someday.jpg" alt="mus1" class="tamanho">
+                    <p>Someday - The Strokes</p>
+                </div>
+                <div class="musica_item" data-audio="music/Young_and_Beautiful.mp3">
+                    <img src="img/Lana_Del_Rey_-_Young_and_Beautiful.jpg" alt="mus2" class="tamanho">
+                    <p>Young and Beautiful - Lana Del Rey</p>
+                </div>
+                <div class="musica_item" data-audio="music/end_of_beginning.mp3">
+                    <img src="img/Djo_-_End_of_Beginning_single_cover.png" alt="mus3" class="tamanho">
+                    <p>End of Beginning - Djo</p>
+                </div>
+                <div class="musica_item" data-audio="music/symphony.mp3">
+                    <img src="img/symphony.jpg" alt="mus4" class="tamanho">
+                    <p>Symphony - Clean Bandit ft. Zara Larsson</p>
+                </div>
+                <div class="musica_item" data-audio="music/Nobody.mp3">
+                    <img src="img/Nobody_OneRepublic_cover.png" alt="mus5" class="tamanho">
+                    <p>Nobody - OneRepublic</p>
+                </div>
+                <div class="musica_item" data-audio="music/lost_on_you.mp3">
+                    <img src="img/Capa_de_Lost_on_You_(versão_internacional).png" alt="mus6" class="tamanho">
+                    <p>Lost on You - LP</p>
+                </div>
+                <div class="musica_item" data-audio="music/wide_awake.mp3">
+                    <img src="img/Katy_Perry_-_Wide_Awake.jpg" alt="mus7" class="tamanho">
+                    <p>Wide Awake - Katy Perry</p>
+                </div>
+                <div class="musica_item" data-audio="music/Hiding_in_The_Blue.mp3">
+                    <img src="img/hiding.webp" alt="mus8" class="tamanho">
+                    <p>In the Blue - TheFatRat</p>
+                </div>
+                <div class="musica_item" data-audio="music/wanna_wait.mp3">
+                    <img src="img/wanna_wait.jpg" alt="mus9" class="tamanho">
+                    <p>Wanna Wait - Unknown Mortal Orchestra</p>
+                </div>
+                <div class="musica_item" data-audio="music/too_sweet.mp3">
+                    <img src="img/too_sweet.jpg" alt="mus10" class="tamanho">
+                    <p>Too Sweet - Alvvays</p>
+                </div>
+                <div class="musica_item" data-audio="music/Middle_of_the_Night.mp3">
+                    <img src="img/night.jpg" alt="mus11" class="tamanho">
+                    <p>Night - Ludovico Einaudi</p>
+                </div>
+                <div class="musica_item" data-audio="music/fly_away.mp3">
+                    <img src="img/fly.webp" alt="mus12" class="tamanho">
+                    <p>Fly Away - TheFatRat</p>
+                </div>
+            </div>
+
+            <!-- Elemento de áudio -->
+            <audio id="audioPlayer" controls style="display: none;"></audio>
+            
+        </section>
+       
+    </div>
+    <!-- Elemento de áudio com botões de controle -->
+    <audio id="audioPlayer" controls style="display: none;"></audio>
+    <div class="audio-controls" style="display: none;">
+        <button id="prevTrack"> << </button>
+        <button id="playPause">Pausar</button>
+        <button id="nextTrack"> >> </button>
+    </div>
+
+        <section class="credito">
+            <p>Copyright © | Equipe: Camilly Silva, Emanuelly Lino e Luana Cardia. Ajuda: Otávio.</p>
+        </section>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
